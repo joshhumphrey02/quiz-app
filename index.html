@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Robust Quiz App</title>
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body>
+		<section class="first-page pages">
+			<div class="hero">
+				<h3>Good morning, <button id="leader">Leaderboard</button></h3>
+				<h1>New questions awaits</h1>
+			</div>
+			<div class="des">
+				<p>#5 questions</p>
+				<h4>Designed form minimal physical strain</h4>
+				<div class="outer-des">
+					<div><span class="icon">+</span><span id="users">0</span></div>
+					<p>
+						Learning <br />
+						now
+					</p>
+				</div>
+			</div>
+			<div class="user-input">
+				<h2>Enter Your Name</h2>
+				<form class="user-form">
+					<input type="text" id="user-name" placeholder="Your Name" />
+					<button id="start-quiz">Start Quiz</button>
+				</form>
+			</div>
+		</section>
+		<section class="second-page pages">
+			<div class="quiz-area">
+				<span id="cancel">X</span>
+				<div class="greet">
+					<h2 id="welcome-user"></h2>
+					<p>
+						Please take your time and asnwer the following question carefully.
+					</p>
+				</div>
+				<div>
+					<div class="ques-tab">
+						<span>Question</span> <span id="ques-tab">1</span>
+					</div>
+					<h5 id="question-container" class="question"></h5>
+				</div>
+				<form class="user-form">
+					<input
+						type="text"
+						id="user-answer"
+						placeholder="Type your answer here" />
+					<button id="submit-answer">Submit Answer</button>
+				</form>
+				<div>
+					<h3 id="score"></h3>
+					<div class="result-buttons">
+						<button id="retake-quiz">Retake Quiz</button>
+						<button id="leader">Leaderboard</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="third-page pages">
+			<div class="quiz-area">
+				<span id="cancel">X</span>
+				<div id="results-container">
+					<h2 class="result-title">Leaderboard</h2>
+					<table id="users-table">
+						<thead>
+							<tr>
+								<th>ID</th>
+								<th>Name</th>
+								<th>Score</th>
+							</tr>
+						</thead>
+						<tbody id="users-table-body"></tbody>
+					</table>
+				</div>
+			</div>
+		</section>
+		<script src="./app.js"></script>
+	</body>
+</html>
